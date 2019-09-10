@@ -1,0 +1,52 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+    header{
+   text-align: center;
+    background-color:powdered-blue;
+    }
+    body {
+  background-color: lightblue;
+}
+
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>Welcome</h1>
+    </header>
+    <content>
+        <center>
+
+            <table>
+                <tr><td style="color:red,background-color:gray"> <h3 align="center">Login Page</h3></td></tr>
+                   <tr> <td><input type="text" placeholder="Username" name="uname"></td>
+                </tr>
+                <tr>
+                    <td><input type="password" placeholder="Password" id="pass" name="pass"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="myFunction()">Show Password</td>
+                </tr>
+                <tr>
+                    <td align="center" ><input type="submit" value="Login" name="login" width="100%"></td>
+                </tr>
+            </table>
+
+        </center>
+    </content>
+    <script>
+function myFunction() {
+  var x = document.getElementById("pass");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+</body>
+</html>
